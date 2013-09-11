@@ -14,7 +14,7 @@ class GeocachesController < ApplicationController
   # GET /geocaches/1.json
   def show
     @geocach = Geocach.find(params[:id])
-     qr_code = ENV['URL'] && @geocach.random_code
+     qr_code = "#{ENV['URL']}#{@geocach.random_code}"
     @qr = RQRCode::QRCode.new( qr_code.to_s , :size => 4, :level => :h )
     @qr_code = "#{ENV['URL']}#{@geocach.random_code}"
     respond_to do |format|
