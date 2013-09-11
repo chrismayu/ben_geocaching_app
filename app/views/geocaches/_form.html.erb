@@ -1,0 +1,17 @@
+<%= simple_form_for @geocach, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :lat %>
+  <%= f.input :lad %>
+  <%= f.input :receive_email %>
+  <%= f.input :cache_name %>
+  <%= f.input :image %>
+  <%= f.input :email %>
+  <%= f.input :user_id %>
+  <%= f.input :hide %>
+  <%= f.input :found %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                geocaches_path, :class => 'btn' %>
+  </div>
+<% end %>

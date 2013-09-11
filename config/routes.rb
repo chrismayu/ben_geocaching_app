@@ -1,4 +1,10 @@
 BenGeocachingApp::Application.routes.draw do
+  resources :tracks
+
+
+  resources :geocaches
+
+
   authenticated :user do
     root :to => 'home#index'
   end
