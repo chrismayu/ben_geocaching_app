@@ -82,6 +82,31 @@ a:link, a:visited {
      
 }
 
+.btn-flat-small {
+  	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+	border-radius:0px;
+  	border-width:0;
+  	background-image:none;
+  	padding:8px;
+  	margin:0 auto;
+  	margin-top:5px;
+  	width:5%;
+    font-size:12pt;
+     
+}
+
+.btn-flat-medium {
+  	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+	border-radius:0px;
+  	border-width:0;
+  	background-image:none;
+  	padding:9px;
+  	margin:0 auto;
+  	margin-top:15px;
+  	width:30%;
+    font-size:12pt;
+     
+}
 /* mini carousel */
 .carousel-inner img {
 	width:100%;

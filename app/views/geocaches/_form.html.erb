@@ -9,9 +9,9 @@
   <%= f.input :user_id %>
   <%= f.input :hide %>
   <%= f.input :found %>
-  <div class="form-actions">
-    <%= f.button :submit, :class => 'btn-primary' %>
+  <div class="pull-center">
+    <%= f.button :submit, "Submit Changes",  :class => 'btn-primary btn-flat-small' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                geocaches_path, :class => 'btn' %>
-  </div>
+                geocaches_path, :class => 'btn btn-flat-small btn-info' %>
+ </div>
 <% end %>
