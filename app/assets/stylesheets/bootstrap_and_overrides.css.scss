@@ -1,3 +1,111 @@
 @import "bootstrap";
 body { padding-top: 60px; }
 @import "bootstrap-responsive";
+
+
+ /* override bootstrap styles */
+        @import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300');
+		 
+		.navbar.transparent.navbar-inverse .navbar-inner {
+		    border-width: 0px;
+		    -webkit-box-shadow: 0px 0px;
+		    box-shadow: 0px 0px;
+		    background-color: rgba(0,0,0,0.0);
+		    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+		    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+		    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+		}
+ 
+
+
+ 
+		.navbar .nav > li > a {
+		    float: none;
+		    line-height: 19px;
+		    padding: 9px 10px 11px;
+		    text-decoration: none;
+		    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+		    color:  #ddd;
+		}
+		
+		
+		
+		.brand {
+		    float: none;
+		    line-height: 19px;
+		    padding: 9px 10px 11px;
+		    text-decoration: none;
+		    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+		    color:  #ddd;
+		}
+body {
+	background: url(image_path('IMG_5864.jpg'))  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color: #fff; ///#656565;
+  	background-color:#333;
+  	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+}
+
+.pull-center{text-align:center;margin:0 auto !important;}
+.pull-middle{vertical-align:middle;padding-top:17% !important;}
+.pull-bottom{position:absolute;bottom:0;}
+
+
+a:link, a:visited {
+	color:#eee;
+}
+
+.block {
+	background-color:rgba(0,0,0,0.4);
+    height:370px;
+  	padding-left:12px;
+  	padding-right:12px;
+}
+
+.block-sm {
+    height:180px;
+}
+
+.btn-flat {
+  	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+	border-radius:0px;
+  	border-width:0;
+  	background-image:none;
+  	padding:16px;
+  	margin:0 auto;
+  	margin-top:15px;
+  	width:20%;
+    font-size:13pt;
+     
+}
+
+/* mini carousel */
+.carousel-inner img {
+	width:100%;
+  	height:100%;
+}
+
+#myCarousel {
+	font-size:90%;
+}
+
+.carousel-controls-mini {
+	margin-left:42%;
+}
+
+.carousel-controls-mini > a {
+	border:1px solid #eee;
+  	margin:1px;
+  	width:20px;
+    display:block;
+  	float:left;
+    text-align:center;
+}
+
+#carousel-bounding-box {
+  margin:0 auto;
+  width:300px;
+}

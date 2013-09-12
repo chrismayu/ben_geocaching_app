@@ -1,6 +1,9 @@
 class TracksController < ApplicationController
   # GET /tracks
   # GET /tracks.json
+  
+  
+     before_filter :authenticate_user!, :except => [:show]
   def index
     @tracks = Track.all
 

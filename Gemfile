@@ -68,7 +68,8 @@ gem 'validates_formatting_of'
 gem 'exception_notification' 
 gem 'gmaps4rails'
 gem 'rqrcode'
- 
+gem 'rqrcode-rails3'
+gem 'mini_magick'
 
 group :development, :test do
 

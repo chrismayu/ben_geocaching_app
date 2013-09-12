@@ -16,10 +16,15 @@ class GeocachesController < ApplicationController
     @geocach = Geocach.find(params[:id])
      qr_code = "#{ENV['URL']}#{@geocach.random_code}"
     @qr = RQRCode::QRCode.new( qr_code.to_s , :size => 10, :level => :h )
+
+    
     @qr_code = "#{ENV['URL']}#{@geocach.random_code}"
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @geocach }
+      format.png  { render :qrcode => qr_code, :size => 10, :level => :h }
+      format.gif  { render :qrcode => qr_code, :size => 10, :level => :h  }
+      format.jpeg { render :qrcode => qr_code, :size => 10, :level => :h }
     end
   end
 

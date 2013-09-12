@@ -1,4 +1,22 @@
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-<% end %>
+ 
+ <div class="block">
+ 
+
+
+ <br> 
+	<div class="row-fluid block-sm">
+     <h1 class="pull-center"><strong>GeoCacheTalks</strong></h1>
+     <p class="lead pull-center">Hide a Cache and it lets you know when it is found</p>
+<br><br><br><br>
+ <div class="lead pull-center">
+
+  <%= link_to t('.new', :default => t("helpers.links.Sign Up Now")),
+              new_user_registration_path, :class => 'btn btn-flat btn-primary' %>
+	</div>
+	</div>	
+  <br><br><br><br>
+   
+ 
+  <br><br>
+</div>
+</div>
