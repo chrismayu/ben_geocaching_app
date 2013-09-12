@@ -2,7 +2,10 @@ class GeocachesController < ApplicationController
   # GET /geocaches
   # GET /geocaches.json
   def index
-    @geocaches = Geocach.all
+ #   @geocaches = Geocach.all
+    @user = current_user.id
+    @geocaches = Geocach.where(:user_id => @user)
+    
 
     respond_to do |format|
       format.html # index.html.erb
@@ -31,7 +34,9 @@ class GeocachesController < ApplicationController
   # GET /geocaches/new
   # GET /geocaches/new.json
   def new
-    @geocach = Geocach.new
+ #   @geocach = Geocach.new
+    @geocach = Geocach.new(:user_id => params[:user_id])
+
 
     respond_to do |format|
       format.html # new.html.erb
