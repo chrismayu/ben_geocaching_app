@@ -3,6 +3,9 @@ body { padding-top: 60px; }
 @import "bootstrap-responsive";
 
 
+
+.offsetHalf1 {margin-left:12.9% !important;} 
+
  /* override bootstrap styles */
         @import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300');
 		 
@@ -60,22 +63,34 @@ a:link, a:visited {
 
 .block {
 	background-color:rgba(0,0,0,0.4);
-    height:370px;
+    height:350px;
   	padding-left:12px;
   	padding-right:12px;
 }
 
 .block2 {
-	background-color:rgba(0,0,0,0.4);
-    height:350px;
-  	padding-left:12px;
-  	padding-right:12px;
+ 
+    height:300px;
+ 
+}
+
+
+.block2 {
+ 
+    height:30px;
+ 
+}
+.block-sm4 {
+    height:10px;
 }
 
 .block-sm {
     height:180px;
 }
 
+.block-sm2 {
+    height:200px;
+}
 .btn-flat {
   	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
 	border-radius:0px;
